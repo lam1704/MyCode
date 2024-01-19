@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="6.0" xmlns="https://jakarta.ee/xml/ns/jakartaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd">
+    <servlet>
+        <servlet-name>NewServlet</servlet-name>
+        <servlet-class>NewServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>SoHoanHaoServlet</servlet-name>
+        <servlet-class>SoHoanHaoServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>NewStudentAddToList</servlet-name>
+        <servlet-class>NewStudentAddToList</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>NewServlet</servlet-name>
+        <url-pattern>/NewServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>SoHoanHaoServlet</servlet-name>
+        <url-pattern>/check</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>NewStudentAddToList</servlet-name>
+        <url-pattern>/addstudent</url-pattern>
+    </servlet-mapping>
+</web-app>
